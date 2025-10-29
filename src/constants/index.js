@@ -251,18 +251,22 @@ const socialImgs = [
   {
     name: "insta",
     imgPath: "/images/insta.png",
+    path: "https://www.instagram.com/ahmed_elmessery/",
   },
   {
     name: "fb",
     imgPath: "/images/fb.png",
+    path: "https://www.facebook.com/AhmedElMesseryy",
   },
   {
     name: "x",
     imgPath: "/images/x.png",
+    path: "https://x.com/ahmedelmesseryy",
   },
   {
     name: "linkedin",
     imgPath: "/images/linkedin.png",
+    path: "https://www.linkedin.com/in/ahmed-el-messery/",
   },
 ];
 

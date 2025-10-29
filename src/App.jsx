@@ -7,10 +7,18 @@ import Footer from './sections/Footer'
 import Hero from './sections/Hero'
 import ShowCaseSection from './sections/ShowCaseSection'
 import Testimonials from './sections/Testimonials'
+import { Helmet } from 'react-helmet-async'
 
 const App = () => {
   return (
     <>
+      <Helmet>
+        <title>Ahmed El-Messery | Frontend Developer</title>
+        <meta
+          name='description'
+          content='Portfolio for MERN Frontend Developer Ahmed El-Messery'
+        />
+      </Helmet>
       <Navbar />
       <Hero />
       <ShowCaseSection />

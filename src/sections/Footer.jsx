@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import { socialImgs } from '../constants'
 
 const Footer = () => {
@@ -10,7 +11,9 @@ const Footer = () => {
         <div className='socials'>
           {socialImgs.map((socialImg, index) => (
             <div key={index} className='icon'>
-              <img src={socialImg.imgPath} alt='social icon' />
+              <a target='_blank' href={socialImg.path}>
+                <img src={socialImg.imgPath} alt='social icon' />
+              </a>
             </div>
           ))}
         </div>
