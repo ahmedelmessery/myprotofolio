@@ -16,7 +16,7 @@ const App = () => {
         <title>Ahmed El-Messery | Frontend Developer</title>
         <meta
           name='description'
-          content='Portfolio for MERN Frontend Developer Ahmed El-Messery'
+          content='Portfolio for MERN Stack Developer Ahmed El-Messery'
         />
       </Helmet>
       <Navbar />

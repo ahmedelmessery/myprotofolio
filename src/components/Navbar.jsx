@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 
 import { navLinks } from '../constants'
+import { Helmet } from 'react-helmet-async'
 
 const NavBar = () => {
   // track if the user has scrolled down the page
@@ -21,9 +22,16 @@ const NavBar = () => {
     <header className={`navbar ${scrolled ? 'scrolled' : 'not-scrolled'}`}>
       <div className='inner'>
         <a href='#hero' className='logo'>
-          Ahmed El-Messery
+          <h1>Ahmed El-Messery</h1>
         </a>
 
+        <Helmet>
+          <title>Ahmed El-Messery | Frontend Developer</title>
+          <meta
+            name='description'
+            content='Portfolio for MERN Stack Developer Ahmed El-Messery'
+          />
+        </Helmet>
         <nav className='desktop'>
           <ul>
             {navLinks.map(({ link, name }) => (
